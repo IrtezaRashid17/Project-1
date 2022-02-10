@@ -1,0 +1,60 @@
+@media screen and (max-width: 980px) {
+    h1, h2 {
+        font-size: 200%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .photography h2 {
+        font-size: 220%;
+    }
+    .photography p {
+        width: 80%;
+    }
+    .btn {
+        margin-top: 55px;
+    }
+    .filter ul li {
+        margin: 0 13px;
+    }
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 425px) {
+    h1, h2 {
+        font-size: 200%;
+        letter-spacing: normal;
+    }
+    .me p {
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    .photography p {
+        width: 100%;
+    }
+    .grid-container {
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        grid-row-gap: 10px;
+    }
+    .myself p {
+        padding-bottom: 0px;
+    }
+    .filter {
+        font-size: 95%;
+    }
+    .subscribe p {
+        margin: 0px;
+        padding: 30px 20px;
+    }
+    form input[type="email"] {
+        width: 100%;
+    }
+    form input[type="submit"] {
+        margin-top: 20px;
+    }
+    .footer .socials ul li {
+        margin: 0 20px;
+        font-size: 250%;
+    }
+}

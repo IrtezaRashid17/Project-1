@@ -1,0 +1,299 @@
+/* ==========FONTS========== */
+@font-face {
+  font-family: SUI, sans-serif;
+  src: url("../fonts/SEGOEUI.TTF");
+}
+/* ==========BASIC SETUP========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: SUI, sans-serif;
+  font-size: 20px;
+  color: #464b4f;
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+}
+.row {
+  max-width: 960px;
+  margin: auto;
+  padding: 30px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* ==========REUSABLE COMPONENTS========== */
+header {
+  padding: 60px 0;
+}
+section {
+  padding: 50px 0;
+}
+h1,
+h2 {
+  font-size: 300%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+h3 {
+  font-size: 90%;
+  margin: 10px 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.btn {
+  margin-top: 60px;
+}
+.btn-full:link,
+.btn-full:visited {
+  color: #fff;
+  background-color: #7b77c9;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.btn-full:hover,
+.btn-full:active {
+  background-color: #4d48b4;
+}
+/* ==========HERO SECTION========== */
+.hero {
+  background: /*linear-gradient(black, rgba(0, 0, 0, 0.712)) */ url("img/hero-bg.jpg")
+    no-repeat center / cover;
+  height: 100vh;
+}
+.switch {
+  border: 2px solid rgb(231, 39, 39);
+  width: 40px;
+  /* height: 21px; */
+  border-radius: 20px;
+  position: absolute;
+  margin-left: 1000px;
+  animation: dash 3s ease-in-out 1s 2;
+  cursor: pointer;
+}
+@keyframes dash {
+  0% {background-color: rgb(160, 35, 26); border: 2px solid red;}
+  50% {background-color: red; border: 2px solid rgb(150, 238, 223);}
+}
+.switch .box {
+  background-color: white;
+  width: 17px;
+  height: 17px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  position: relative;
+  animation: labib 2s ease-in-out 1s 2;
+}
+@keyframes labib {
+  0% {background-color: #fff; left: 0;}
+  50% {background-color: #fff; left: 20px;}
+}
+.logo {
+  height: 85px;
+}
+.hero-text-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-text-box p, h1 {
+  color: #fff;
+}
+.scroll-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  margin: auto;
+}
+.scroll-down a i {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 100%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+/* ==========ABOUT SECTION========== */
+.about {
+  background: url("img/zigzag.png") no-repeat center / cover;
+}
+.about h2 {
+  margin: 60px;
+  font-size: 300%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.about-me p {
+  font-size: 150%;
+  line-height: 130%;
+  color: #464b4f;
+}
+.about-box {
+  text-align: left;
+}
+.about-box p {
+  font-size: 90%;
+  color: #888a8b;
+  line-height: 140%;
+}
+/* ==========WORK SECTION========== */
+.work {
+  background: url('../css/img/wooden-wall.jpg');
+  color: #fff;
+}
+.work h3 {
+  font-size: 105%;
+}
+.work span {
+  color: #818baa;
+  font-size: 70%;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.filter {
+  margin: 45px 0;
+}
+.filter ul li {
+  list-style: none;
+  display: inline-block;
+}
+.filter ul li a:link,
+.filter ul li a:visited {
+  color: #fff;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+}
+.filter ul li a:hover,
+.filter ul li a:active {
+  border-color: #7b77c9;
+  transition: 0.4s;
+}
+.portfolio-box h3,
+p {
+  background: transparent;
+}
+.portfolio-box img {
+  width: 100%;
+  display: block;
+  opacity: 0.6;
+  transition: 0.6s;
+}
+.portfolio-box img:hover {
+  opacity: 1;
+  /* box-shadow: 2px 3px 15px 1px rgb(22 21 26); */
+}
+/* ==========PHOTOGRAPHY SECTION========== */
+.photography {
+  background: url('img/zigzag.png')  no-repeat center / cover;
+}
+.photography p {
+  margin: 30px auto;
+  width: 70%;
+  font-size: 150%;
+  line-height: 130%;
+  color: #888a8b;
+}
+/* .photography h2 {
+  margin: 20px auto;
+  font-size: 300%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+} */
+.img-box img {
+  width: 100%;
+  display: block;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.img-box img:hover {
+  opacity: 1;
+  box-shadow: -2px 5px 17px 1px #100f0fd1;
+}
+/* ==========SUBSCRIBE SECTION========== */
+.subscribe {
+  padding: 80px 0;
+  background: /*linear-gradient(black, rgba(0, 0, 0, 0.712)) */ url("img/hero-bg.jpg")
+    no-repeat center / cover;
+}
+.subscribe p {
+  font-size: 90%;
+  width: 50%;
+  margin: 35px auto;
+  color: #fff;
+}
+.infinity {
+  height: 30px;
+}
+form input[type="email"] {
+  width: 380px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 90%;
+  padding: 17.5px 10px;
+}
+form ::placeholder {
+  color: #c8c8c8;
+  
+}
+form input[type="submit"] {
+  color: #d6d5d5;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #7b77c9;
+  padding: 15.7px 25px;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+form input[type="submit"]:hover {
+  background-color: #4d48b4;
+}
+/* ==========FOOTER SECTION========== */
+.footer {
+  background: url(img/neon-spirals.png);
+  padding: 30px;
+}
+.social-list ul li {
+  list-style: none;
+  display: inline-block;
+}
+.social-list ul li a {
+  color: #dbdbdb;
+  font-size: 150%;
+  margin: 0px 30px;
+  transition: 0.5s;
+}
+.social-list ul li:hover a {
+  color: rgb(0, 47, 255);
+}
+.social-list ul li:nth-child(2):hover a {
+  color: rgb(21, 166, 223);
+}
+.social-list ul li:nth-child(3):hover a {
+  color: rgb(247, 138, 15);
+}
+.social-list ul li:nth-child(4):hover a {
+  color: rgb(223, 21, 132);
+}
+.copyright {
+  color: #dbdbdb;
+  font-size: 60%;
+  margin-top: 60px;
+}
